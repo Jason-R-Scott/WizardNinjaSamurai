@@ -19,13 +19,10 @@ namespace WizardNinjaSamurai {
 
         public void Attack (Human target) {
 
-            if(target == null)
-            {
-                System.Console.WriteLine("Failed Attack");
-            }
-            else
-            {
-            target.Health -= 5 * Strength;
+            if (target == null) {
+                System.Console.WriteLine ("Failed Attack");
+            } else {
+                target.Health -= 5 * Strength;
             }
         }
     }

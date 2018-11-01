@@ -1,10 +1,14 @@
-namespace WizardNinjaSamurai {
-    public class Ninja : Human {
-        public Ninja (string name) : base (name) {
+namespace WizardNinjaSamurai
+{
+    public class Ninja : Human
+    {
+        public Ninja (string name) : base (name)
+        {
             Dexterity = 175;
         }
 
-        public void Steal (Human target) {
+        public void Steal (Human target)
+        {
             this.Attack (target);
             this.Health += 10;
         }
